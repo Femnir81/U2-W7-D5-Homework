@@ -10822,3 +10822,6 @@ footer {
   padding: 2rem 0;
   box-shadow: 6px 6px 16px 5px darkgrey;
 }
+footer address {
+  font-weight: 500;
+}
