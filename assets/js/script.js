@@ -31,7 +31,7 @@ async function visualizeCards() {
   for (const character of arrayCharacters) {
     let searchName = document.getElementById('searchBar').value
     console.log(searchName)
-    if (character.name == searchName) {
+    if (character.name.toLowerCase() == searchName.toLowerCase()) {
       document.getElementById('container').innerHTML += `<div class="card">
       <div class="cardContainer">
       <img src=${character.imageUrl} class="card-img-top" alt="..." />
