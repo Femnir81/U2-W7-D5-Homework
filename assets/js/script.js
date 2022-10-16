@@ -42,7 +42,8 @@ async function visualizeCards() {
         </p>
       </div>
     </div>`
-    } else if (searchName == "") {
+    } else if (document.getElementById('searchBar').value.length == 0) {
+      document.getElementById('container').innerHTML = ''
       return await displayLidia()      
     }
   }
